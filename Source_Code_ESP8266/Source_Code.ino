@@ -5,8 +5,8 @@
 #include "ThingSpeak.h"
 
 //----------Wifi information--------//
-char ssid[] = "Hang";
-char pass[] = "0368925247";
+char ssid[] = "Name of your wifi";
+char pass[] = "Password of your wifi";
 
 const int DELAY_DEMO = 5000; //5000ms
 bool flag_send = true;
