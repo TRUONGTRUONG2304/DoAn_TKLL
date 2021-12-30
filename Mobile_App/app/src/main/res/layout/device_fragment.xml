@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <TextView
+        app:layout_widthPercent="90%"
+        app:layout_heightPercent="25%"
+        app:layout_marginStartPercent="5%"
+        app:layout_marginTopPercent="5%"
+        android:background="@drawable/custom_txt"/>
+    <ImageView
+        app:layout_widthPercent="12%"
+        app:layout_heightPercent="9%"
+        app:layout_marginStartPercent="6%"
+        app:layout_marginTopPercent="6%"
+        android:background="@drawable/ic_aircondition"/>
+    <TextView
+        app:layout_widthPercent="40%"
+        app:layout_heightPercent="8%"
+        app:layout_marginStartPercent="20%"
+        app:layout_marginTopPercent="7%"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="Máy điều hòa"/>
+    <SeekBar
+        app:layout_widthPercent="52%"
+        app:layout_heightPercent="4%"
+        app:layout_marginStartPercent="6%"
+        app:layout_marginTopPercent="16%"
+        android:progress="20"
+        android:id="@+id/seekBarTempDevice" />
+
+    <Button
+        android:id="@+id/btnSetTempDevice"
+        android:text="SET"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="#bf00ff"
+        app:layout_heightPercent="7%"
+        app:layout_widthPercent="20%"
+        app:layout_marginStartPercent="22%"
+        app:layout_marginTopPercent="21%"/>
+
+    <TextView
+        android:id="@+id/txtAirConditionerDevice"
+        android:text="20°C"
+        app:layout_heightPercent="23%"
+        app:layout_marginStartPercent="59%"
+        app:layout_marginTopPercent="6%"
+        android:textStyle="bold"
+        android:textSize="52sp"
+        android:textColor="#06ffff"
+        android:gravity="center"
+        app:layout_widthPercent="35%" />
+    <TextView
+        app:layout_widthPercent="90%"
+        app:layout_heightPercent="25%"
+        app:layout_marginStartPercent="5%"
+        app:layout_marginTopPercent="32%"
+        android:background="@drawable/custom_txt"/>
+    <ImageView
+        app:layout_widthPercent="14%"
+        app:layout_heightPercent="9%"
+        app:layout_marginStartPercent="6%"
+        app:layout_marginTopPercent="33%"
+        android:background="@drawable/ic_fan"
+        android:id="@+id/imageView" />
+    <TextView
+        app:layout_widthPercent="40%"
+        app:layout_heightPercent="8%"
+        app:layout_marginStartPercent="22%"
+        app:layout_marginTopPercent="34%"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="Máy quạt"/>
+    <TextView
+        android:id="@+id/txtStateHumiDevice"
+        android:text="OFF"
+        app:layout_heightPercent="25%"
+        app:layout_marginStartPercent="59%"
+        app:layout_marginTopPercent="32%"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:textColor="#06ffff"
+        android:gravity="center"
+        app:layout_widthPercent="35%" />
+    <TextView
+        android:text="Chế độ"
+        app:layout_widthPercent="10%"
+        app:layout_heightPercent="9%"
+        app:layout_marginStartPercent="5%"
+        app:layout_marginTopPercent="45%"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#f7ff00"
+        android:gravity="center" />
+    <Button
+        android:id="@+id/btnMode1Device"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:background="@drawable/custom_txt_foot"
+        app:layout_marginStartPercent="17%"
+        app:layout_marginTopPercent="45%"
+        android:text="0"/>
+    <Button
+        android:id="@+id/btnMode2Device"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:background="@drawable/custom_txt_foot"
+        app:layout_marginStartPercent="31%"
+        app:layout_marginTopPercent="45%"
+        android:text="1"/>
+
+    <Button
+        android:id="@+id/btnMode3Device"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/btnMode2Device"
+        android:layout_alignBottom="@+id/btnMode2Device"
+        android:background="@drawable/custom_txt_foot"
+        android:gravity="center"
+        android:text="2"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_marginStartPercent="45%"
+        app:layout_marginTopPercent="45%" />
+    <TextView
+        app:layout_widthPercent="40%"
+        app:layout_heightPercent="35%"
+        app:layout_marginStartPercent="5%"
+        app:layout_marginTopPercent="60%"
+        android:background="@drawable/custom_txt"
+        android:id="@+id/textView5" />
+
+    <TextView
+        android:gravity="center"
+        android:text="Cửa"
+        android:textColor="#fff"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_heightPercent="8%"
+        app:layout_marginStartPercent="5%"
+        app:layout_marginTopPercent="61%"
+        app:layout_widthPercent="40%" />
+    <ImageView
+        android:id="@+id/imgDoorDevice"
+        app:layout_widthPercent="24%"
+        app:layout_heightPercent="17%"
+        app:layout_marginStartPercent="13%"
+        app:layout_marginTopPercent="69%"/>
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/swDoorDevice"
+        app:layout_widthPercent="22%"
+        app:layout_heightPercent="8%"
+        app:layout_marginStartPercent="14%"
+        app:layout_marginTopPercent="86%"
+        android:thumb="@drawable/sw_thumb"
+        app:showText="true"
+        app:track="@drawable/sw_track" />
+    <TextView
+        app:layout_widthPercent="40%"
+        app:layout_heightPercent="35%"
+        app:layout_marginStartPercent="55%"
+        app:layout_marginTopPercent="60%"
+        android:background="@drawable/custom_txt"/>
+    <TextView
+        android:text="Đèn"
+        app:layout_widthPercent="40%"
+        app:layout_heightPercent="8%"
+        app:layout_marginStartPercent="55%"
+        app:layout_marginTopPercent="61%"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:id="@+id/textView" />
+    <ImageView
+        android:id="@+id/imgLightDevice"
+        app:layout_widthPercent="16%"
+        app:layout_heightPercent="17%"
+        app:layout_marginStartPercent="66%"
+        app:layout_marginTopPercent="69%"/>
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/swLightDevice"
+        app:layout_widthPercent="22%"
+        app:layout_heightPercent="8%"
+        app:layout_marginStartPercent="63%"
+        app:layout_marginTopPercent="86%"
+        android:thumb="@drawable/sw_thumb"
+        app:showText="true"
+        app:track="@drawable/sw_track" />
+
+</android.support.percent.PercentRelativeLayout>

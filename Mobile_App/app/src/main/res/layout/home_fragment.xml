@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="190dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/custom_btn"
+        android:id="@+id/textView4" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Cường độ ánh sáng"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtLightIntensity"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#ff9500"
+        android:text="None"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/txtLightIntensity"
+        android:layout_toEndOf="@+id/txtLightIntensity"
+        android:gravity="center"
+        android:text="lux"
+        android:textSize="25sp"
+        android:textColor="#b8ff9500"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="170dp"
+        android:layout_height="20dp"
+        android:layout_alignStart="@+id/txtLightIntensity"
+        android:layout_below="@+id/txtLightIntensity"
+        android:gravity="center"
+        android:textColor="#666666"
+        android:text="None"/>
+
+    <TextView
+        android:id="@+id/txtHeadLastValue"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_alignStart="@+id/txtTime"
+        android:layout_below="@+id/txtTime"
+        android:gravity="left"
+        android:textSize="15dp"
+        android:textColor="#666666"
+        android:text="Last value:"/>
+
+    <TextView
+        android:id="@+id/txtLastValue"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/txtTime"
+        android:layout_toEndOf="@+id/txtHeadLastValue"
+        android:gravity="center"
+        android:text="none"
+        android:textSize="15dp"
+        android:textColor="#0800fa"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtHeadAverageValue"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_alignStart="@+id/txtHeadLastValue"
+        android:layout_below="@+id/txtHeadLastValue"
+        android:layout_marginTop="5dp"
+        android:gravity="left"
+        android:text="Average value:"
+        android:textColor="#666666"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txtAverageValue"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/txtHeadAverageValue"
+        android:layout_alignBottom="@+id/txtHeadAverageValue"
+        android:layout_toEndOf="@+id/txtHeadAverageValue"
+        android:gravity="center"
+        android:text="none"
+        android:textColor="#0800fa"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/graphMini"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
