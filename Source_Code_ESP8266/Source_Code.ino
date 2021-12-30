@@ -24,7 +24,7 @@ const char *myWriteAPI_Key = "OK0IGXDXYMD4298G";
 WiFiClient client;
 
 //----------Ngưỡng giá trị cho phép----------//
-const int MAX_LIGHT_INTENSITY = 500;
+const int MAX_LIGHT_INTENSITY = 00;
 const int MIN_LIGHT_INTENSITY = 10;
 
 /*
